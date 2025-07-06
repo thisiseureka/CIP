@@ -1,0 +1,100 @@
+.resume-url-container {
+    /* display: flex;
+    align-items: center;
+    gap: 10px; */
+    position: relative;
+    margin-top: 25px;
+}
+
+.resume-url {
+    flex: 1;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.uacf7-save-confirmation label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+ 
+.uacf7-save-confirmation input{
+    margin-bottom: 20px;
+}
+.copy-resume-url-btn {
+    padding: 5px 10px;
+    background-color: #0073aa;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    
+}
+
+.copy-resume-url-btn:hover {
+    background-color: #005a8c;
+}
+
+.uacf7-submit-email.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.uacf7-submit-email.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #cccccc; 
+    color: #666666; 
+    text-decoration: none;
+}
+
+.uacf7-submit-email {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #046cd5; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration-line: none !important;
+    font-weight: 600;
+}
+
+.uacf7-submit-email:hover {
+    background-color: #035cb5;
+    color: #fff;
+}
+
+/* Style for the Save and Resume Later button */
+
+.uacf7-save-and-continue-btn {
+	color: #000;
+	background: transparent;
+	border: 1px solid #000;
+	transition: 0.3s ease-in-out;
+	margin-right: 10px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1em;
+    border-radius: 4px;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out;
+    margin-left: -16px;
+}
+.uacf7-save-and-continue-btn:hover {
+    color: #ffffff;
+    background-color: #045CB4;
+    border-color: #045CB4;
+}

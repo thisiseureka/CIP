@@ -1,0 +1,40 @@
+
+@keyframes uacf7_fabeinup {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+
+  }
+
+@keyframes floodingAnimation{
+    0%   { transform: translate(0, -10px); }
+    50%  { transform: translate(0, 0px); }
+    100% { transform: translate(0, -10px); }
+}
+
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }

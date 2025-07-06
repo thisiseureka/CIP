@@ -1,0 +1,32 @@
+{
+  "name": "bitapps/pi",
+  "description": "An Integration plugin for wordpress",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": ">=7.4",
+    "bitapps/wp-validator": "^1",
+    "bitapps/wp-kit": "^2.0",
+    "typisttech/imposter-plugin": "^0.6.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "BitApps\\PiPro\\": "./backend/app",
+      "BitApps\\PiPro\\Utils\\": "./backend/_plugin-commons/src"
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf ./vendor && rm composer.lock",
+    "reset": "composer clean && composer install"
+  },
+  "config": {
+    "allow-plugins": {
+      "typisttech/imposter-plugin": true
+    }
+  },
+  "extra": {
+    "imposter": {
+      "namespace": "BitApps\\PiPro\\Deps\\"
+    }
+  }
+}

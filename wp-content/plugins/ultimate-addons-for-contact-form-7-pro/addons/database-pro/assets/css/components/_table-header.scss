@@ -1,0 +1,57 @@
+body {
+    &.ultimate-addons_page_ultimate-addons-db {
+        background: #f0eef6;
+    }
+}
+
+#uacf7dp_addons_header {
+    background-color: $UI-0;
+    display: flex;
+    position: relative;
+    padding: 16px 24px;
+    align-items: center;
+    gap: 16px;
+    img {
+        display: flex;
+        width: 32px;
+        height: 32px;
+        padding: 3.2px;
+        justify-content: center;
+        align-items: center;
+    }
+    h4 {
+        color: $UI-800;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: -0.75px;
+        margin: 0;
+    }
+    .uacf7dp_header-form {
+        position: relative;
+        h4 {
+            display: none;
+        }
+        &.table_hasno_data {
+            position: absolute;
+            bottom: -100px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 999;
+            h4 {
+                display: flex;
+                color: $UI-800;
+                font-family: Inter;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+    }
+}

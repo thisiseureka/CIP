@@ -1,0 +1,91 @@
+.submission-preview-btn{
+    color: #000;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+
+/* Modal Background */
+.uacf7-preview-modal {
+	display: none;
+	position: fixed;
+	z-index: 10000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.7);
+	overflow: auto;
+}
+
+/* Modal Content */
+.uacf7-preview-modal-content {
+	background-color: #fff;
+	padding: 20px;
+	margin: 10% auto;
+	width: 70%;
+	max-width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Close Button */
+.uacf7-close-btn {
+	color: #aaa;
+	font-size: 28px;
+	font-weight: bold;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+
+.uacf7-close-btn:hover,
+.uacf7-close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Table Styling */
+.uacf7-preview-modal table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.uacf7-preview-modal th, .uacf7-preview-modal td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.uacf7-preview-modal th {
+    background-color: #f2f2f2;
+}
+
+.uacf7-modal-buttons .uacf7-back-btn {
+    background-color: #000;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.uacf7-preview-btn {
+	color: #000;
+	background: transparent;
+	border: 1px solid #000;
+	transition: 0.3s ease-in-out;
+	margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px)  {
+	/* Modal Content */
+	.uacf7-preview-modal-content {
+		width: 95%;
+	}
+}

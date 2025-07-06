@@ -1,0 +1,1083 @@
+/*Left progressbar style*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.uacf7-multistep-progressbar-wraper {
+	width: 25%;
+	padding: 30px 20px;
+	background: #f8f8f8;
+}
+.uacf7-multistep-form-wraper {
+	width: 75%;
+	padding-left: 20px;
+}
+
+.progressbar-style-6 + .uacf7-multistep-form-wraper{
+	width: 75%;
+	padding-left: 20px!important;
+}
+@media (max-width: 868px){
+    .uacf7-multistep-progressbar-wraper {
+    	display: none !important;
+    }
+    .uacf7-multistep-form-wraper {
+    	width: 100%;
+    	padding: 0;
+    }
+}
+.uacf7-multistep-row {
+    display: flex;
+}
+
+.uacf7-multistep-row .uacf7-multistep-progressbar-wraper {
+    display: flex;
+}
+.uacf7-multistep-row .uacf7-multistep-progressbar-wraper.full-height {
+    align-items: flex-start;
+}
+.uacf7-multistep-row .steps-row.setup-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.current-step-title .step-title {
+    display: none;
+}
+.current-step-title .step-title.step-1{
+    display: block;
+}
+.current-step-title .step-title {
+	color: #02044A;
+	font-weight: 600;
+	font-size: 22px;
+}
+.uacf7-multistep-row .uacf7-steps.steps-form {
+    display: flex;
+}
+.uacf7-multistep-row .steps-form {
+	display: table;
+	width: auto;
+}
+.uacf7-multistep-row .steps-form .steps-row .steps-step {
+    display: flex;
+}
+.uacf7-multistep-row .full-height .steps-form .steps-row .steps-step {
+    padding: 30px 0;
+}
+.uacf7-multistep-row .full-height .steps-form .steps-row .steps-step:first-child{
+    padding-top: 0 !important;
+}
+.uacf7-multistep-row .full-height .steps-form .steps-row .steps-step:last-child {
+    padding-bottom: 0 !important;
+}
+.uacf7-multistep-row .full-height .steps-form .steps-row .steps-step:last-child a {
+    margin-top: 0 !important;
+}
+.uacf7-multistep-row .full-height .steps-form .steps-row .steps-step:first-child a {
+    margin-top: -30px !important;
+}
+.uacf7-multistep-row .steps-form .steps-row .steps-step p {
+	display: inline-block;
+	margin-left: 40px;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	text-align: left;
+	margin-right: 10px;
+	color: #02044A;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.progressbar-style-3 .steps-form .steps-row .steps-step .btn-circle,
+.progressbar-style-2 .steps-form .steps-row .steps-step .btn-circle,
+.progressbar-style-6 .steps-form .steps-row .steps-step .btn-circle {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+    -webkit-box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+    color: #02044A;
+    background: #fff;
+}
+.progressbar-style-2 .steps-form .steps-row .steps-step .btn-circle.uacf7-btn-active,
+.progressbar-style-6 .steps-form .steps-row .steps-step .btn-circle.uacf7-btn-active {
+    color: #fff;
+    background-color: #02044A;
+}
+.progressbar-style-3 .steps-form .steps-row .steps-step .btn-circle img,
+.progressbar-style-2 .steps-form .steps-row .steps-step .btn-circle img,
+.progressbar-style-6 .steps-form .steps-row .steps-step .btn-circle img {
+    padding: 5px;
+}
+.uacf7-multistep-row .steps-form .steps-row::before {
+	width: 2px;
+	height: 100%;
+	left: 15px;
+	top: 0;
+}
+.progressbar-style-3 .steps-form .steps-row .steps-step .btn-circle {
+    overflow: hidden;
+}
+@media (max-width: 767px) {
+    .uacf7-multistep-progressbar-wraper.progressbar-style-2 {
+    	display: none;
+    }
+    .uacf7-multistep-form-wraper {
+    	width: 100%;
+    }
+}
+
+.progressbar-style-3 .step-complete .btn.btn-circle::after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	background-size: 60%;
+	background-image: url('https://our-projects.xyz/uacf7/wp-content/plugins/ultimate-addon-multistep-pro/assets/check.svg');
+	content: '';
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.progressbar-style-3 .steps-form .steps-row .steps-step .btn-circle {
+	left: inherit; 
+	right: 0;
+}
+.uacf7-multistep-row .progressbar-style-3 .steps-form .steps-row .steps-step.step-complete .btn-circle {
+	background: unset !important;;
+}
+.uacf7-multistep-row .progressbar-style-3 .steps-form .steps-row .steps-step p {
+	margin-left: 0;
+	margin-right: 40px;
+}
+.uacf7-multistep-row .progressbar-style-3 .steps-form .steps-row::before {
+	right: 14px;
+	left: inherit;
+}
+.uacf7-multistep-progressbar-wraper.progressbar-style-3 {
+	padding-right: 25px;
+	justify-content: flex-end;
+}
+.progressbar-style-4 .steps-row .steps-step p{
+    display: none !important;
+}
+.progressbar-style-4 .steps-form {
+	margin-bottom: 30px;
+}
+.progressbar-style-4 .uacf7-multistep-form-wraper {
+	width: 100%;
+}
+.progressbar-style-4 .steps-form .steps-row .steps-step::after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #ccc;
+	left: 0;
+	z-index: 1;
+	margin-top: 14px;
+}
+.progressbar-style-4 .steps-form .steps-row .steps-step:first-child::after {
+	width: 50%;
+	right: 0;
+	left: auto;
+}
+.progressbar-style-4 .steps-form .steps-row .steps-step:last-child::after {
+	width: 50%;
+}
+.progressbar-style-4 .steps-form .steps-row::before {
+    display: none !important;
+}
+.progressbar-style-4 .steps-form .steps-row .steps-step .btn-circle {
+	z-index: 2;
+	background-color: #ccc;
+}
+.progressbar-style-4 .steps-form .steps-row .steps-step.step-complete .btn-circle {
+	background-color: #02044A !important;
+}
+.progressbar-style-4 .steps-step.step-complete::after {
+	background-color: #02044A !important;
+}
+.progressbar-style-4 .steps-form .steps-row .steps-step .btn-circle img {
+	padding: 5px;
+}
+.progressbar-style-5 .steps-form .steps-row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.progressbar-style-5 .steps-form .steps-row .steps-step {
+	display: table-cell;
+	text-align: center;
+	position: relative;
+	flex-grow: 1;
+	flex-basis: 0;
+	border-bottom: 2px solid #BEC2CB;
+    margin: 0 5px;
+}
+.progressbar-style-5 .steps-form .steps-row .steps-step.step-complete {
+    border-bottom: 2px solid #2B3951;
+}
+.progressbar-style-5 .steps-form .steps-row .steps-step:first-child {
+    margin-left: 0;
+}
+.progressbar-style-5 .steps-form .steps-row .steps-step:last-child {
+    margin-right: 0;
+}
+.progressbar-style-5 .steps-form .steps-row .steps-step .btn-circle {
+	display: none;
+}
+.progressbar-style-5 .uacf7-btn-default {
+	color: #444;
+	background-color: #ddd !important;
+}
+.progressbar-style-5 .steps-form .steps-row::before {
+	display: none;
+}
+.progressbar-style-5 .steps-form .steps-row .steps-step p {
+	margin: 0;
+	margin-bottom: 12px;
+	color: #BEC2CB;
+	font-size: 20px;
+}
+.progressbar-style-5 .steps-form .steps-row .steps-step.step-complete p {
+    color: #2B3951;
+}
+
+/* .current-step-title.progressbar-style-6-title .step-title {
+	width: 30%;
+} */
+.current-step-title.progressbar-style-6-title {
+	margin-bottom: 35px;
+	display: block;
+}
+.current-step-title.progressbar-style-6-title .step-title h3 {
+	font-size: 20px;
+	margin: 0;
+	margin-bottom: 12px;
+	font-weight: 600;
+}
+.current-step-title.progressbar-style-6-title .step-title p {
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0;
+	line-height: 24px;
+}
+
+
+/**
+ *
+ * Style for multistep form style 7
+ *
+ */
+ .uacf7-multistep-progressbar-wraper.progressbar-style-7 {
+	padding: 24px;
+	border-right: 1px solid #E1E5EA;
+	background-color: #fff;
+}
+/* .uacf7-multistep-progressbar-wraper.full-height.progressbar-style-7 {
+	align-items: center;
+} */
+.uacf7-multistep-progressbar-wraper.progressbar-style-7 {
+	width: 40%;
+	padding: 24px;
+	background: #ffffff;
+	padding-left: 0;
+}
+.uacf7-multistep-row:has(.progressbar-style-7) {
+	background: #fff;
+	box-shadow: 12px 24px 48px 0px #1C54A80A;
+	padding: 40px;
+	gap: 40px;
+	border-radius: 16px;
+}
+
+.uacf7-multistep-row .progressbar-style-7 .uacf7-steps.steps-form {
+	display: flex;
+	width: 100%;
+}
+.uacf7-multistep-row .uacf7-steps.steps-form .steps-row.setup-panel {
+	gap: 24px;
+	width: 100%;
+}
+
+.uacf7-multistep-row .full-height.progressbar-style-7 .steps-form .steps-row .steps-step {
+	padding: 0;
+}
+
+.uacf7-multistep-progressbar-wraper.progressbar-style-7 .steps-step:has(.uacf7-btn-active) {
+	background-color: #EBF2FF;
+	border-radius: 8px;
+	padding: 8px !important;
+}
+.uacf7-multistep-row .full-height.progressbar-style-7 .steps-form .steps-row .steps-step:first-child {
+	padding-top: 8px !important;
+}
+
+.progressbar-style-7 .step-content .uacf7-next, 
+.progressbar-style-7 .step-content .uacf7-prev {
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	text-align: center;
+}
+.progressbar-style-7 .uacf7-step.step-content.step-start button.uacf7-next{
+	float: right !important;
+}
+.progressbar-style-7 label{
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0px;
+}
+.wpcf7-form .progressbar-style-7 + .uacf7-multistep-form-wraper label,
+.wpcf7-form .progressbar-style-10 + .uacf7-multistep-form-wraper label {
+	display: block;
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0px;
+	gap: 4px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+.wpcf7 .progressbar-style-7 + .uacf7-multistep-form-wraper input.wpcf7-form-control:not([type="submit"]),
+.wpcf7 .progressbar-style-10 + .uacf7-multistep-form-wraper input.wpcf7-form-control:not([type="submit"]){
+	height: 48px;
+}
+.wpcf7 .progressbar-style-7 + .uacf7-multistep-form-wraper input.wpcf7-form-control:not([type="submit"]), 
+.wpcf7 .progressbar-style-10 + .uacf7-multistep-form-wraper input.wpcf7-form-control:not([type="submit"]), 
+.wpcf7 textarea.wpcf7-form-control {
+	padding: 12px 8px inherit;
+	background-color: #F8F9FB;
+	border-radius: 4px;
+	border: 2px solid transparent;
+	transition: all ease-in-out 0.3s;
+}
+.wpcf7 .progressbar-style-7 + .uacf7-multistep-form-wraper input.wpcf7-form-control:not([type="submit"]):focus, 
+.wpcf7 .progressbar-style-7 + .uacf7-multistep-form-wraper textarea.wpcf7-form-control:focus,
+.wpcf7 .progressbar-style-7 + .uacf7-multistep-form-wraper input.wpcf7-form-control:not([type="submit"]):focus-visible, 
+.wpcf7 .progressbar-style-7 + .uacf7-multistep-form-wraper textarea.wpcf7-form-control:focus-visible ,
+.wpcf7 .progressbar-style-10 + .uacf7-multistep-form-wraper input.wpcf7-form-control:not([type="submit"]):focus, 
+.wpcf7 .progressbar-style-10 + .uacf7-multistep-form-wraper textarea.wpcf7-form-control:focus,
+.wpcf7 .progressbar-style-10 + .uacf7-multistep-form-wraper input.wpcf7-form-control:not([type="submit"]):focus-visible, 
+.wpcf7 .progressbar-style-10 + .uacf7-multistep-form-wraper textarea.wpcf7-form-control:focus-visible {
+	border: 2px solid #2979ff;
+}
+
+.uacf7-multistep-row .progressbar-style-7 .steps-form .steps-row .steps-step p {
+	color: #8997A9;
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: 0.2px;
+	text-align: right;
+	margin: 0;
+}
+.uacf7-multistep-row .progressbar-style-7 .steps-form .steps-row .steps-step:has(.uacf7-btn-active) p,
+.uacf7-multistep-row .progressbar-style-10 .steps-form .steps-row .steps-step:has(.uacf7-btn-active) p {
+	color: #2979ff;
+}
+.uacf7-multistep-row .progressbar-style-7 .steps-form .steps-row .steps-step span {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-align: right;
+	color: #9696A0;
+}
+
+.uacf7-multistep-row .progressbar-style-7 .steps-form .steps-row .steps-step:has(.uacf7-btn-active) span ,
+.uacf7-multistep-row .progressbar-style-10 .steps-form .steps-row .steps-step:has(.uacf7-btn-active) span {
+	color: #76A9FF;
+}
+
+.uacf7-multistep-row .progressbar-style-7 .steps-form .steps-row .steps-step .steps-info {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+
+.uacf7-multistep-row .progressbar-style-7 .steps-form .steps-row::before {
+	width: 16px;
+}
+
+.uacf7-multistep-row .progressbar-style-10 .steps-form .steps-row::before {
+	width: 4px;
+}
+
+.progressbar-style-7 .steps-form .steps-row .steps-step .btn-circle{
+	width: 56px;
+	height: 56px;
+	gap: 8px;
+	border-radius: 50px;
+	padding: 16px;
+}
+.progressbar-style-7 .steps-form .steps-row .steps-step .btn-circle{
+
+	background-color: #F8F9FB !important;
+
+}
+.progressbar-style-7 .steps-form .steps-row .steps-step .btn-circle, 
+.progressbar-style-10 .steps-form .steps-row .steps-step .btn-circle{
+	background-color: #F8F9FB !important;
+	color: #8997A9;
+}
+
+.progressbar-style-7 .steps-form .steps-row .steps-step .btn-circle.completed, 
+.progressbar-style-10 .steps-form .steps-row .steps-step .btn-circle.completed{
+	background-color: #EBF2FF !important;
+	color: #2979FF;
+}
+
+.progressbar-style-7 .steps-form .steps-row .steps-step .uacf7-btn-active,
+.progressbar-style-10 .steps-form .steps-row .steps-step .uacf7-btn-active {
+
+	background-color: #2979FF !important;
+	color: #fff;
+}
+
+.uacf7-multistep-row .full-height.progressbar-style-7 .steps-form .steps-row .steps-step:first-child a {
+	margin-top: 0px !important;
+}
+
+.progressbar-style-7 .steps-form .steps-row .steps-step .btn-circle img,
+.progressbar-style-7 .steps-form .steps-row .steps-step .btn-circle i,
+.progressbar-style-10 .steps-form .steps-row .steps-step .btn-circle i,
+.progressbar-style-10 .steps-form .steps-row .steps-step .btn-circle img {
+	border-radius: 50% !important;
+	width: 24px;
+	height: 24px;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.uacf7-multistep-row .progressbar-style-7 .steps-form .steps-row .steps-step {
+	display: flex;
+	flex-direction: row-reverse;
+	gap: 16px;
+}
+.uacf7-multistep-row .progressbar-style-7 .steps-form .steps-row::before {
+	height: 100%;
+	right: 15px;
+	left: auto;
+	top: 0;
+	background-color: #f8f9fb;
+}
+
+.progressbar-style-7 + .uacf7-multistep-form-wraper .current-step-title .step-title p {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: -2%;
+	color: #607085;
+}
+
+.progressbar-style-7 + .uacf7-multistep-form-wraper .current-step-title .step-title h3{
+	font-family: Inter;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 40px;
+	letter-spacing: 0%;
+}
+.progressbar-style-7 + .uacf7-multistep-form-wraper .current-step-title .step-title span{
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0%;
+	color: #2979FF;
+	padding-bottom: 8px;
+	display: block;
+}
+.progressbar-style-7 + .uacf7-multistep-form-wraper .uacf7-step.step-content.step-start button.uacf7-next, 
+.progressbar-style-7 + .uacf7-multistep-form-wraper .uacf7-step.step-content.step-start button.uacf7-prev {
+	float: right;
+}
+.progressbar-style-7 + .uacf7-step.step-content p:has(button.uacf7-prev){
+	display: flex;
+	justify-content: flex-end;
+	gap: 40px;
+}
+.progressbar-style-7 + .uacf7-step.step-content button.uacf7-prev {
+	background-color: #F5F8FF;
+	color: #2979FF;
+}
+
+.uacf7-multistep-wrapper .uacf7-steps-wrapper:has(.progressbar-style-8) + .uacf7-multisetp-form .uacf7-buttons,
+.uacf7-multistep-wrapper .uacf7-steps-wrapper:has(.progressbar-style-9) + .uacf7-multisetp-form .uacf7-buttons,
+.uacf7-multistep-row .progressbar-style-7 + .uacf7-multistep-form-wraper .uacf7-buttons,
+.uacf7-multistep-row .progressbar-style-10 + .uacf7-multistep-form-wraper .uacf7-buttons {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 15px;
+}
+
+.uacf7-multistep-wrapper .uacf7-steps-wrapper:has(.progressbar-style-8) + .uacf7-multisetp-form .uacf7-buttons .wpcf7-spinner,
+.uacf7-multistep-wrapper .uacf7-steps-wrapper:has(.progressbar-style-9) + .uacf7-multisetp-form .uacf7-buttons .wpcf7-spinner,
+.uacf7-multistep-row .progressbar-style-7 + .uacf7-multistep-form-wraper .uacf7-buttons .wpcf7-spinner,
+.uacf7-multistep-row .progressbar-style-10 + .uacf7-multistep-form-wraper .uacf7-buttons .wpcf7-spinner {
+    order: -1;
+}
+
+.uacf7-multistep-wrapper .uacf7-steps-wrapper:has(.progressbar-style-8) + .uacf7-multisetp-form .uacf7-buttons .uacf7-prev,
+.uacf7-multistep-wrapper .uacf7-steps-wrapper:has(.progressbar-style-9) + .uacf7-multisetp-form .uacf7-buttons .uacf7-prev,
+.uacf7-multistep-row .progressbar-style-7 + .uacf7-multistep-form-wraper .uacf7-buttons .uacf7-prev,
+.uacf7-multistep-row .progressbar-style-10 + .uacf7-multistep-form-wraper .uacf7-buttons .uacf7-prev {
+	background-color: #F5F8FF;
+	color: #2979FF;
+}
+
+.uacf7-multistep-row .progressbar-style-7 + .uacf7-multistep-form-wraper .wpcf7-submit,
+.uacf7-multistep-row .progressbar-style-10 + .uacf7-multistep-form-wraper .wpcf7-submit,
+.uacf7-multistep-wrapper .uacf7-steps-wrapper:has(.progressbar-style-8) + .uacf7-multisetp-form .wpcf7-submit,
+.uacf7-multistep-wrapper .uacf7-steps-wrapper:has(.progressbar-style-9) + .uacf7-multisetp-form .wpcf7-submit {
+	float: right;
+	margin-top: 0;
+}
+
+.uacf7-multistep-row .progressbar-style-7 + .uacf7-multistep-form-wraper .uacf7-step:last-child .uacf7-buttons,
+.uacf7-multistep-row .progressbar-style-10 + .uacf7-multistep-form-wraper .uacf7-step:last-child .uacf7-buttons,
+.uacf7-multistep-wrapper .uacf7-steps-wrapper:has(.progressbar-style-8) + .uacf7-multisetp-form .uacf7-step:last-child .uacf7-buttons,
+.uacf7-multistep-wrapper .uacf7-steps-wrapper:has(.progressbar-style-9) + .uacf7-multisetp-form .uacf7-step:last-child .uacf7-buttons {
+	padding-right: 15px;
+}
+
+.uacf7-multistep-row .progressbar-style-7 + .uacf7-multistep-form-wraper .uacf7-step:last-child .uacf7-buttons .uacf7-prev,
+.uacf7-multistep-row .progressbar-style-10 + .uacf7-multistep-form-wraper .uacf7-step:last-child .uacf7-buttons .uacf7-prev,
+.uacf7-multistep-wrapper .uacf7-steps-wrapper:has(.progressbar-style-8) + .uacf7-multisetp-form .uacf7-step:last-child .uacf7-buttons .uacf7-prev,
+.uacf7-multistep-wrapper .uacf7-steps-wrapper:has(.progressbar-style-9) + .uacf7-multisetp-form .uacf7-step:last-child .uacf7-buttons .uacf7-prev {
+	margin-top: 0;
+}
+
+.uacf7-multistep-row .progressbar-style-7 + .uacf7-multistep-form-wraper .wpcf7-submit  + .wpcf7-spinner,
+.uacf7-multistep-row .progressbar-style-10 + .uacf7-multistep-form-wraper .wpcf7-submit  + .wpcf7-spinner,
+.uacf7-multistep-wrapper .uacf7-steps-wrapper:has(.progressbar-style-8) + .uacf7-multisetp-form .wpcf7-submit  + .wpcf7-spinner,
+.uacf7-multistep-wrapper .uacf7-steps-wrapper:has(.progressbar-style-9) + .uacf7-multisetp-form .wpcf7-submit  + .wpcf7-spinner {
+	position: absolute;
+}
+
+/**
+ *
+ * Style for multistep form style 8
+ *
+ */
+
+ .uacf7-multistep-wrapper:has(.progressbar-style-8),
+ .uacf7-multistep-wrapper:has(.progressbar-style-9) {
+	background: #fff;
+	box-shadow: 12px 24px 48px 0px #1C54A80A;
+	padding: 40px;
+	gap: 40px;
+	border-radius: 16px;
+}
+
+.progressbar-style-8.steps-form .steps-row,
+.progressbar-style-9.steps-form .steps-row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.progressbar-style-8.steps-form .steps-row, 
+.progressbar-style-9.steps-form .steps-row {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	column-gap: 0px;
+	row-gap: 2px;
+	justify-content: space-between;
+	transition: transform 0.3s ease-in-out;
+	width: 100%;
+}
+.progressbar-style-8.steps-form .steps-row .steps-step,
+.progressbar-style-9.steps-form .steps-row .steps-step {
+	background: #ddd;
+	flex-grow: 1;
+}
+.progressbar-style-8.steps-form .steps-row .steps-step,
+.progressbar-style-9.steps-form .steps-row .steps-step {
+	display: table-cell;
+	text-align: center;
+	position: relative;
+	flex-grow: 1;
+	/* flex-basis: 0; */
+	border-right: 1px solid #fff;
+}
+.progressbar-style-8.steps-form .steps-row .steps-step .btn-circle.uacf7-btn-active,
+.progressbar-style-9.steps-form .steps-row .steps-step .btn-circle.uacf7-btn-active {
+	transform: inherit;
+	box-shadow: none;
+}
+
+.progressbar-style-8.steps-form .steps-row .steps-step .btn-circle,
+.progressbar-style-9.steps-form .steps-row .steps-step .btn-circle {
+	font-size: 12px;
+	line-height: 24px;
+	text-decoration: none;
+	outline: 0;
+	background: transparent;
+	width: 100%;
+	height: 100%;
+	padding: 5px 10px;
+	border-radius: 0;
+}
+.steps-form.progressbar-style-8 .steps-row .steps-step .btn-circle.uacf7-btn-active {
+	color: #2979FF;
+	background-color: #EBF2FF !important;
+	outline: 0;
+	/* -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); */
+	transform: scale(1);
+	border-bottom: 4px solid #2979FF;
+}
+.steps-form.progressbar-style-8 .steps-row .steps-step .btn-circle:hover,
+.steps-form.progressbar-style-8 .steps-row .steps-step .btn-circle:active,
+.steps-form.progressbar-style-8 .steps-row .steps-step .btn-circle:focus,
+.steps-form.progressbar-style-9 .steps-row .steps-step .btn-circle:hover,
+.steps-form.progressbar-style-9 .steps-row .steps-step .btn-circle:active,
+.steps-form.progressbar-style-9 .steps-row .steps-step .btn-circle:focus {
+	box-shadow: none;
+}
+.progressbar-style-8.steps-form .steps-row .steps-step,
+.progressbar-style-9.steps-form .steps-row .steps-step {
+	text-align: center;
+}
+
+.progressbar-style-8.steps-form .steps-row .steps-step,
+.progressbar-style-9.steps-form .steps-row .steps-step {
+	width: 277;
+	height: 60;
+	gap: 8px;
+	padding: 0;
+	flex: 1;
+  	text-align: center;
+}
+.progressbar-style-8 .uacf7-btn-default{
+	color: #444;
+	background-color: #fff !important;
+}
+
+.steps-form.progressbar-style-8 .steps-row .steps-step .btn-circle img,
+.steps-form.progressbar-style-9 .steps-row .steps-step .btn-circle img  {
+	position: relative;
+	height: 24px;
+	width: 24px;
+}
+
+.uacf7-multistep-wrapper .uacf7-steps.steps-form.progressbar-style-8,
+.uacf7-multistep-wrapper .uacf7-steps.steps-form.progressbar-style-9{
+	margin-bottom: 40px;
+	overflow: hidden;
+  	white-space: nowrap;
+	display: flex;
+	position: relative;
+  	width: 100%;
+}
+.uacf7-steps-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.scroll-btn {
+	display: none;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.002) 0%, rgba(255, 255, 255, 0.60) 50%, #FFF 100%);
+	color: #3D3D3D;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 20px;
+	width: 40px;
+	height: 40px;
+	align-items: center;
+	justify-content: flex-end;
+	z-index: 10;
+	width: 70px;
+	height: 100%;
+}
+.left-btn {
+	left: 0;
+	justify-content: flex-start;
+	background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.60) 50%, rgba(255, 255, 255, 0.001) 100%);
+}
+.right-btn {
+	right: 0;
+}
+.scroll-btn:hover {
+	color: #0056b3;
+}
+
+.steps-form.progressbar-style-8 .steps-row .steps-step .btn-circle,
+.steps-form.progressbar-style-9 .steps-row .steps-step .btn-circle {
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 0.2px;
+	color: #8997A9;
+	padding: 16px 32px;
+	display: flex;
+	justify-content: flex-start;
+	gap: 12px;
+	align-items: center;
+	border-bottom: 4px solid #fff ;
+	white-space: nowrap;
+}
+.steps-form.progressbar-style-8 .steps-row .steps-step .btn-circle p,
+.steps-form.progressbar-style-9 .steps-row .steps-step .btn-circle p {
+	margin: 0;
+}
+.steps-form.progressbar-style-8 .steps-row .steps-step.step-complete .btn-circle{
+	color: #2979FF;
+}
+
+.steps-form.progressbar-style-8 .steps-row .steps-step.step-complete .btn-circle:not(.uacf7-btn-active) {
+	border-bottom: 4px solid #C4DAFF;
+	background-color: #F5F8FF !important;
+}
+.progressbar-style-8.steps-form .steps-row .steps-step.step-complete{
+	background: #F5F8FF;
+}
+
+.wpcf7-form .uacf7-steps-wrapper:has(.progressbar-style-8) + .uacf7-multisetp-form label,
+.wpcf7-form .uacf7-steps-wrapper:has(.progressbar-style-9) + .uacf7-multisetp-form label {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0px;
+	gap: 4px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	color: #607085;
+}
+
+.wpcf7-form .uacf7-steps-wrapper:has(.progressbar-style-8) + .uacf7-multisetp-form input.wpcf7-form-control:not([type="submit"]),
+.wpcf7 textarea.wpcf7-form-control,
+.wpcf7-form .uacf7-steps-wrapper:has(.progressbar-style-9) + .uacf7-multisetp-form input.wpcf7-form-control:not([type="submit"]) {
+	padding: 12px 8px inherit;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+	border: 1px solid #E1E5EA;
+	transition: all ease-in-out 0.3s;
+	box-shadow: none;
+}
+
+
+/**
+ *
+ * Style for multistep form style 9
+ *
+ */
+ 
+ .steps-form.progressbar-style-9 .steps-row .steps-step .btn-circle.uacf7-btn-active {
+	 color: #ffffff;
+	 outline: 0;	
+	 transform: scale(1);
+     background-color: transparent;
+ }
+ .steps-form.progressbar-style-9 .steps-row .steps-step.step-complete .btn-circle:not(.uacf7-btn-active) {
+	color: #2979FF;
+ }
+
+ .steps-form.progressbar-style-9 .steps-row .steps-step .btn-circle {
+	border-bottom: none;
+ }
+ .steps-form.progressbar-style-9 .steps-row .steps-step:first-child{
+	 border-radius: 8px 0 0 8px;
+ }
+
+ .steps-form.progressbar-style-9 .steps-row .steps-step:last-child {
+	 border-radius: 0 8px 8px 0;
+ }
+
+ .progressbar-style-9.steps-form .steps-row .steps-step {
+	-webkit-clip-path: polygon(20px 50%, 0% 0%, calc(100% - 20px) 0%, 100% 50%, calc(100% - 20px) 100%, 0% 100%);
+	background: linear-gradient(90deg, #EBEFFF 0%, #FDFDFD 100%);
+ }
+ .progressbar-style-9.steps-form .steps-row .steps-step:not(:first-child) {
+	margin: 0 0 0 -22px;
+ }
+ .steps-form.progressbar-style-9 .steps-row .steps-step:not(:first-child) .btn-circle {
+	 padding-left: 50px;
+ }
+ .progressbar-style-9.steps-form .steps-row .steps-step:first-child {
+	-webkit-clip-path: polygon(0% 0%, calc(100% - 20px) 0%, 100% 50%, calc(100% - 20px) 100%, 0% 100%);
+ }
+
+ .progressbar-style-9.steps-form .steps-row .steps-step:last-child {
+	-webkit-clip-path: polygon(20px 50%, 0% 0%, 100% 0%, 100% 100%, 0% 100%);
+ }
+
+ .progressbar-style-9.steps-form .steps-row .steps-step:has(.uacf7-btn-active) {
+	background: linear-gradient(90deg, #0646B0 0%, #2979FF 100%);
+ }
+
+.progressbar-style-9 .uacf7-btn-default {
+   background-color: linear-gradient(90deg, #EBEFFF 0%, #FDFDFD 100%);
+}
+
+.progressbar-style-9.steps-form .steps-row .steps-step .btn-circle.uacf7-btn-active,
+.progressbar-style-9.steps-form .steps-row .steps-step .btn-circle {
+	background-color: transparent !important;
+}
+
+.progressbar-style-9.steps-form .steps-row::before {
+	width: 0px;
+	height: 0px;
+}
+
+
+/**
+ *
+ * Style for multistep form style 10
+ *
+ */
+
+ .uacf7-multistep-row .progressbar-style-10 .steps-form .steps-row .steps-step .steps-info {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	text-align: left;
+	width: 80%;
+}
+.uacf7-multistep-row .progressbar-style-10 .steps-form .steps-row .steps-step .steps-info p {
+	margin: 0px;
+}
+.uacf7-multistep-progressbar-wraper.progressbar-style-10 {
+	width: 40%;
+	padding: 24px;
+	background: #ffffff;
+	padding-left: 0;
+	padding-top: 50px;
+	margin-top: 220px;
+}
+.uacf7-multistep-row .progressbar-style-10 .steps-form .steps-row .steps-step {
+	display: flex;
+	justify-content: flex-start;
+	gap: 16px;
+}
+.uacf7-multistep-row .progressbar-style-10 .steps-form .steps-row::before {
+	left: 20px;
+}
+
+.progressbar-style-10 .uacf7-multistep-form-wraper {
+	padding: 40px !important;
+	border-radius: 16px;
+	box-shadow: 12px 24px 48px 0px #1C54A80A;
+	/* margin-top: -220px; */
+	background: #fff;
+}
+
+.progressbar-style-10 + .uacf7-multistep-form-wraper {
+	border-radius: 16px;
+	/* margin-top: -220px; */
+	background: #fff;
+	z-index: 99;
+}
+
+.progressbar-style-10 + .uacf7-multistep-form-wraper .current-step-title{
+	padding: 40px !important;
+	border-radius: 16px 16px 0 0;
+	background: #FFFCF4;
+}
+.progressbar-style-10 + .uacf7-multistep-form-wraper > div:last-child{
+	padding: 40px !important;
+	border-radius: 0 0 16px 16px;
+	box-shadow: 12px 24px 48px 0px #1C54A80A;
+	background: #fff;
+}
+.progressbar-style-10 + .uacf7-multistep-form-wraper .current-step-title .step-title span {
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0%;
+	color: #2979FF;
+	padding-bottom: 8px;
+	display: block;
+}
+.progressbar-style-10 + .uacf7-multistep-form-wraper .current-step-title .step-title h3 {
+	font-family: Inter;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 40px;
+	letter-spacing: 0%;
+}
+.progressbar-style-10 + .uacf7-multistep-form-wraper .current-step-title .step-title p {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: -2%;
+	color: #607085;
+	margin-bottom: 0;
+}
+.uacf7-multistep-row .full-height .steps-form .steps-row .steps-step:first-child a {
+	margin-top: 0px !important;
+}
+.progressbar-style-10 .steps-form .steps-row .steps-step .btn-circle img {
+	border-radius: 50% !important;
+	width: 24px;
+	height: 24px;
+}
+
+.progressbar-style-10 .steps-form .steps-row .steps-step .btn-circle {
+	width: 40px;
+	height: 40px;
+	gap: 8px;
+	border-radius: 50px;
+	padding: 0px;
+}
+.uacf7-multistep-row .progressbar-style-10 .steps-form .steps-row .steps-step p {
+	color: #8997A9;
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: 0.2px;
+	text-align: left;
+	margin: 0;
+}
+
+.uacf7-multistep-row .progressbar-style-10 .steps-form .steps-row .steps-step span {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-align: left;
+	color: #9696A0;
+}
+
+.progressbar-style-7 .steps-form .steps-row .steps-step .btn-circle i,
+.progressbar-style-10 .steps-form .steps-row .steps-step .btn-circle i {
+	border-radius: 50% !important;
+	width: 24px;
+	height: 24px;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+/* Small devices (          ) */
+@media (max-width: 768px) {
+     
+	.progressbar-style-2, 
+	.progressbar-style-3, 
+	.progressbar-style-6 {
+		display: inline-block !important;
+		text-align: center;
+		margin-right: 20px;
+		padding: 20px 0px;
+	}
+	.steps-step p {
+		display: none !important;
+	} 
+	.progressbar-style-2 .uacf7-steps.steps-form,
+	.progressbar-style-3 .uacf7-steps.steps-form,
+	.progressbar-style-6 .uacf7-steps.steps-form {
+		display: inline-block !important;
+	}  
+	.progressbar-style-2 .steps-row  .steps-step,
+	.progressbar-style-3 .steps-row  .steps-step,
+	.progressbar-style-6 .steps-row  .steps-step {
+		padding: 13px 0px !important;
+	}
+	.progressbar-style-2 .steps-row .steps-step:first-child,
+	.progressbar-style-3 .steps-row .steps-step:first-child,
+	.progressbar-style-6 .steps-row .steps-step:first-child {
+		padding-top: 13px !important;
+	}
+	.progressbar-style-2 .steps-form .steps-row .steps-step .btn-circle,
+	.progressbar-style-3 .steps-form .steps-row .steps-step .btn-circle,
+	.progressbar-style-6 .steps-form .steps-row .steps-step .btn-circle{
+		position: relative;
+	}
+	.progressbar-style-2 .steps-row .steps-step,
+	.progressbar-style-3 .steps-row .steps-step,
+	.progressbar-style-6 .steps-row .steps-step{
+		display: block !important;
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+	.steps-form.progressbar-style-8 .steps-row .steps-step .btn-circle,
+	.steps-form.progressbar-style-9 .steps-row .steps-step .btn-circle {
+		font-size: 16px;
+		justify-content: center;
+	}
+	
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+	
+	.steps-form.progressbar-style-8 .steps-row .steps-step .btn-circle,
+	.steps-form.progressbar-style-9 .steps-row .steps-step .btn-circle {
+		font-size: 16px;
+	}
+}
+
+/* large devices (large laptops and desktops, 1080px)  */
+@media (max-width: 1080px) {
+	
+	.uacf7-multistep-row .progressbar-style-7 .steps-form .steps-row .steps-step p {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.uacf7-multistep-row .progressbar-style-7 .steps-form .steps-row .steps-step span {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.uacf7-multistep-row .progressbar-style-7 .steps-form .steps-row .steps-step {
+		gap: 12px;
+	}
+
+	.progressbar-style-7 .steps-form .steps-row .steps-step .btn-circle {
+		width: 50px;
+		height: 50px;
+	}
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

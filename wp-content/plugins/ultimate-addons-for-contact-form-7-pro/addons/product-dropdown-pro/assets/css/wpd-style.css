@@ -1,0 +1,211 @@
+.product-grid {
+    display: flex !important;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.product-grid>div {
+    width: calc(25% - 8px);
+}
+
+.s-product-img {
+    position: relative;
+}
+
+.single-product-grid {
+    position: relative;
+    border: 1px solid #EAEEF3;
+    border-radius: 8px;
+}
+
+.img-absulate img {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.loading img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+.s-product-content {
+    padding: 10px;
+}
+
+.absulate-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 50% !important;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.absulate-hover:after {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background-color: #000;
+    top: 0;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.single-product-grid:hover .absulate-hover {
+    visibility: visible;
+    opacity: 1;
+    /* padding-top: 50% !important; */
+}
+.absulate-hover input {
+	position: absolute !important;
+	left: 50%;
+	top: 50% !important;
+	height: 20px !important;
+	width: 20px !important;
+	margin-left: -10px;
+	margin-top: -10px;
+}
+.absulate-hover.active {
+    visibility: visible;
+    opacity: 1;
+    /* padding-top: 50% !important; */
+}
+
+.absulate-hover input[type=radio],
+.absulate-hover input[type=checkbox] {
+    border: 0px;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+}
+
+.absulate-hover input[type="radio"]:focus,
+.absulate-hover input[type="checkbox"]:focus {
+    outline: none;
+}
+
+.s-product-content h5 a {
+    text-decoration: none !important;
+    font-size: 16px;
+}
+
+.s-product-content h5 {
+    margin-bottom: 0;
+}
+
+.wpcf7-not-valid-tip {
+    display: inline-block;
+    width: 100%;
+}
+
+.uacf7-product-price {
+    padding: 10px 0;
+}
+
+/* Variation */
+.uacf7-wpd-quick-view {
+    position: absolute;
+    top: 74%;
+    left: 0;
+    background-color: #fff;
+    z-index: 99;
+    /*! width: 100%; */
+    border-radius: 9px !important;
+}
+
+.uacf7-wpd-quick-view .variations_form.cart {
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-grid .woocommerce-variation-description,
+.product-grid .quantity {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+.uacf7-wpd-quick-view .variations {
+    margin-bottom: 5px;
+}
+
+.uacf7-wpd-quick-view .variations_form.cart {
+    margin-bottom: 5px;
+}
+
+.uacf7-wpd-quick-view .variations_form th,
+.uacf7-wpd-quick-view .variations_form td {
+    padding: 10px !important;
+}
+
+.uacf7-wpd-quick-view select {
+    padding: 8px;
+}
+
+.uacf7-wpd-quick-view {
+    border: 1px solid #fff;
+    box-shadow: 0px 10px 20px rgba(75, 26, 0, 0.05);
+
+}
+
+.s-product-img .loading {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    background-color: #00000042; 
+    width: 100%;
+  }
+
+.select2-container--open .select2-dropdown {
+	margin-top: 32px;
+}
+.wpcf7-uacf7_product_dropdown + .select2-container ul {
+	margin: 0 !important;
+}
+
+/* Variation */
+
+
+
+/*  Responwsive */
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px) {
+    .product-grid>div {
+        width: calc(50% - 5px);
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 568px) and (max-width: 768px) {
+    .product-grid>div {
+        width: calc(33.33% - 7px);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .product-grid>div {
+        width: calc(33.33% - 7px);
+    }
+}
+
+

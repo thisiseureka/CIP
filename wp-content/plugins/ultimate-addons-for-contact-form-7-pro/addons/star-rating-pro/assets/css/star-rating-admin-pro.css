@@ -1,0 +1,28 @@
+.uacf7_review_shortcode {
+  width: 100%;
+  padding: 10px !important;
+  text-align: center;
+}
+
+.uacf7-review-meta-option {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.uacf7-option-table th,
+.uacf7-option-table td {
+  text-align: left !important;
+}
+
+.uacf7-option-table td {
+  padding: 0 20px !important;
+
+}
+
+.uacf7-option-table select,
+.uacf7-option-table input[type="text"] {
+  min-width: 250px !important;
+}
+.toplevel_page_uacf7_settings a[href^="post-new.php?post_type=uacf7_review"]{
+  padding-left: 20px !important; 
+}

@@ -1,0 +1,36 @@
+#uacf7-conversational-form {
+    width: 100%;
+    min-height: auto;
+    overflow: hidden;
+    .uacf7_conversational_item_wrap {
+        display: none;
+        &.active {
+            display: block;
+        }
+        &.uacf7-last-item {
+            &.active {
+                display: flex;
+            }
+            input {
+                &.wpcf7-submit {
+                    display: none;
+                }
+            }
+            span {
+                &.wpcf7-spinner {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.animate-flicker {
+    -webkit-animation: flickerAnimation .2s infinite;
+    -moz-animation: flickerAnimation .2s infinite;
+    -o-animation: flickerAnimation .2s infinite;
+     animation: flickerAnimation .2s infinite;
+ }
+
+
+

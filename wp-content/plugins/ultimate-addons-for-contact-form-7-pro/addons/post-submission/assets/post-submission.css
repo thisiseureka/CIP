@@ -1,0 +1,10 @@
+.uacf7_post_taxonomy_wraper ul,
+.uacf7_post_taxonomy_wraper ul li {
+    margin: 0
+}
+.uacf7_post_taxonomy {
+    width: 100%
+}
+#qt_uacf7_post_content_toolbar input {
+    width: auto !important;
+}
